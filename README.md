@@ -1,4 +1,4 @@
-# IRSS Sharing Code
+# IRSS Tips, Tricks, and Sharing
 This is a place where lab members can provide code, short tutorials, and share what they are working on.
 
 ## Guidelines
