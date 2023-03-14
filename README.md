@@ -1,5 +1,5 @@
-# Tutorials
-A collection of short tutorials developed by IRSS members.
+# IRSS Sharing Code
+This is a place where lab members can provide code, short tutorials, and share what they are working on.
 
 ## Guidelines
 
