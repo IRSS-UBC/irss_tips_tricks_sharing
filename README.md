@@ -9,4 +9,10 @@ A collection of short tutorials developed by IRSS members.
 
 This repo is currently public, but it can be made for organization members only if people want
 
+## Current Content
+
+1) Point Cloud Deep Learning for Forest Data Tutorial (Harry)
+2) HELIOS++ Workshop (Lukas) -> Access at this [link](https://www.winiwarter.dev/helios/)
+
+
 
