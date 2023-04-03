@@ -1,25 +1,4 @@
-# IRSS Tips, Tricks, and Sharing
-This is a place where lab members can provide code, short tutorials, and share what they are working on.
-
-## Guidelines
-
-1) There is absolutely no pressure to contribute to this repo.
-2) This is a good place to store short coding, stats, or conceptual tips and tricks
-3) Try and challenge youself to share your work in a brief and simple way
-
-This repo is currently public, but it can be made for organization members only if people want
-
-## Current Content
-
-1) Point Cloud Deep Learning for Forest Data Tutorial (Harry)
-2) HELIOS++ Workshop (Lukas) -> Access at this [link](https://www.winiwarter.dev/helios/)
-3) Cuda Performance Testing for Raster Analysis (Lukas) -> [original repo](https://github.com/lwiniwar/cuda-test)
-
-## Details about tutorials
-
-### Cuda Performance Testing for Raster Analysis 
-
-Performance comparison of numba.cuda and other methods:
+## Performance comparison of numba.cuda and other methods
 
 In `cuda_raster_slope.py`, find different implementations to calculate the slope of a timeseries for each raster
 cell in a 2D array. The results on a Lambda Tensorbook (early 2022) are shown here:
