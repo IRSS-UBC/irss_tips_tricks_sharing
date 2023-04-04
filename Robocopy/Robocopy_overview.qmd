@@ -1,0 +1,68 @@
+---
+title: "Robocopy (Alternative title: How to go from Wall-E to Eve)"
+author: "Sarah Smith-Tripp"
+format:
+  revealjs: 
+    theme: dark
+editor: visual
+---
+
+## Robocopy
+
+[Robocopy](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy), also called 'robust file copy' is a great tool to quickly and safely backup your data. It even allows you to backup your data in *paralell.*
+
+![](images/paste-86E17E5C.png)
+
+## Likelihood of a Harddrive Failure
+
+-   HDD have a 5% annual failure rate and SST have a 0.7 annual failure rate
+
+    ![](images/paste-AF57167A.png){width="194"}
+
+-   If there are 50 computers in the lab
+
+    -   3 hard drives per person
+
+    -   150 hard drives
+
+    -   5 people likely to be effected each year
+
+    -   *the answer is likely higher for us because are computers are burning up in our rooms*
+
+## Robocopy
+
+Robocopy syntax is broadly this:
+
+`<source> <destination> [<file>[ …]] [<options>]<options> :`
+
+Available options include:
+
+-   /s - copy subdirectories, but not empty directories
+
+-   /e - copy subdirectories including empty directories
+
+-   /z copy in restartable mode
+
+-   /b copy in backup mode which can copy as an administrator
+
+-   /mir mirroes a directory tree **and deletes files in the destination that are not in the source** \*\* User be wary: I once mixed up my source and destination and ended up deleting a TON of files!
+
+-   /mt\[:n\] copies in parallel
+
+-   /xd exclude a directory
+
+-   /xo if the file exists and is the same date or newer don't overwrite
+
+## Example Backup Script
+
+`robocopy D:\SmithTripp E:\BackUps /MIR /Z /MT:32  /R:15 /W:30 /V /NP /LOG:Backup.log`
+
+> In lay terms: "please copy all of the files off of the source (D:\\SmithTripp) and place them into the destination (E:\\Backups) using parallel (using 32 nodes) in restartable mode. If the file no longer exists in the source delete in the destination. If the file is open, wait 30 seconds and try again for a total 15 times. Log this backup to a text file.
+
+## Now you too can have a backup! 
+
+![](images/paste-9E1262DF.png)
+
+## And when you need to, you can regrow.
+
+![](images/paste-4F5F1EDC.png)
