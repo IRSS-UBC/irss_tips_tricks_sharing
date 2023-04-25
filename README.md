@@ -8,10 +8,3 @@ This is a place where lab members can provide code, short tutorials, and share w
 3) Try and challenge youself to share your work in a brief and simple way
 
 This repo is currently public, but it can be made for organization members only if people want
-
-## Current Content
-
-1) Point Cloud Deep Learning for Forest Data Tutorial (Harry)
-2) HELIOS++ Workshop (Lukas) -> Access at this [link](https://www.winiwarter.dev/helios/)
-3) Cuda Performance Testing for Raster Analysis (Lukas) -> [original repo](https://github.com/lwiniwar/cuda-test)
-4) Robocopy file backup tutorial (Sarah)
