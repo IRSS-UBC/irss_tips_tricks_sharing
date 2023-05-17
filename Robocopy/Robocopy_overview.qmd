@@ -55,11 +55,11 @@ Available options include:
 
 ## Example Backup Script
 
-`robocopy D:\SmithTripp E:\BackUps /MIR /Z /MT:32  /R:15 /W:30 /V /NP /LOG:Backup.log`
+`robocopy D:\SmithTripp E:\BackUps /XA:SH /E /MT /ZB /MT:32  /R:15 /W:30 /V /NP /LOG:Backup.log`
 
 > In lay terms: "please copy all of the files off of the source (D:\\SmithTripp) and place them into the destination (E:\\Backups) using parallel (using 32 nodes) in restartable mode. If the file no longer exists in the source delete in the destination. If the file is open, wait 30 seconds and try again for a total 15 times. Log this backup to a text file.
 
-## Now you too can have a backup! 
+## Now you too can have a backup!
 
 ![](images/paste-9E1262DF.png)
 
